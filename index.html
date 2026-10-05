@@ -173,7 +173,7 @@
   .card { border: 1px solid var(--line); border-radius: 16px; background: var(--surface); padding: 24px; display: flex; flex-direction: column; }
   .card .tagline { margin-bottom: 8px; }
   .card h3 { font-size: 19px; }
-  .card p { color: var(--muted); font-size: 14.5px; margin: 10px 0 16px; flex: 1; }
+  .card p:not(.tagline) { color: var(--muted); font-size: 14.5px; margin: 10px 0 16px; flex: 1; }
 
   /* Skills */
   .skills { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
@@ -373,6 +373,7 @@
           <h3>Logistics data analysis</h3>
           <p>Analysed delivery delays, failed services, complaints and route efficiency with SQL, R and Python, and designed a MongoDB Atlas database, comparing indexing and query options.</p>
           <div class="chips"><span class="chip">SQL</span><span class="chip">Pandas</span><span class="chip">MongoDB</span><span class="chip">R</span></div>
+          <a class="btn small" style="margin-top:16px; align-self:flex-start;" href="https://github.com/SamsonSiby5827/Northstar_Databases_Analytics_Coursework" target="_blank" rel="noopener">View code on GitHub</a>
         </div>
         <div class="card">
           <p class="tagline mono">Coursework · 2026</p>
