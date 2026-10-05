@@ -288,7 +288,7 @@
         <div class="project-top">
           <p class="tagline mono">Final-year project · Feb – May 2026</p>
           <h3>DeepfakeGuard</h3>
-          <p>A web app that checks whether a face in an image or video has been faked, and records a file's digital fingerprint on a blockchain so anyone can later prove the file hasn't been changed.</p>
+          <p>A web app that checks whether a face in an image or video has been faked, and records a file's digital fingerprint on a blockchain so it can later be checked for changes.</p>
           <div class="project-links">
             <a class="btn small primary" href="https://github.com/SamsonSiby5827/deepfakeguard" target="_blank" rel="noopener">View code on GitHub</a>
             <span class="btn small disabled" aria-disabled="true">Live demo · coming soon</span>
@@ -307,7 +307,7 @@
           <div class="flow">
             <span class="step">Same file</span><span class="to">→</span>
             <span class="step">SHA-256 fingerprint</span><span class="to">→</span>
-            <span class="step">Solidity smart contract</span><span class="to">→</span>
+            <span class="step">Smart contract (local Ganache chain)</span><span class="to">→</span>
             <span class="step out">Verifiable record</span>
           </div>
         </div>
@@ -315,7 +315,7 @@
         <div class="case">
           <div>
             <h4>The problem</h4>
-            <p>Fake faces are getting harder to spot by eye. People need a quick way to check a suspicious image or video, and a way to prove an original file hasn't been edited since it was registered.</p>
+            <p>Fake faces are getting harder to spot by eye. People need a quick way to check a suspicious image or video, and a way to check an original file hasn't been edited since it was registered.</p>
           </div>
           <div>
             <h4>What I built</h4>
@@ -323,7 +323,7 @@
               <li>Flask app for <strong>single, batch and video</strong> checks</li>
               <li>Video pipeline that samples up to 24 frames, skips blurry or face-less frames and combines the rest into one verdict</li>
               <li>Quality warnings when a face is missing, tiny or blurred, instead of a falsely confident answer</li>
-              <li>SHA-256 hashing and a smart contract (Web3.py) to register and verify files</li>
+              <li>SHA-256 hashing and a Solidity smart contract on a local Ganache blockchain (Web3.py) to register and verify files</li>
             </ul>
           </div>
           <div>
@@ -351,7 +351,7 @@
         <div class="pipeline" style="border-top:1px solid var(--line); border-bottom:0;">
           <p class="pipeline-label mono">Stack</p>
           <div class="chips">
-            <span class="chip">Python</span><span class="chip">TensorFlow / Keras</span><span class="chip">EfficientNetB0</span><span class="chip">OpenCV</span><span class="chip">Flask</span><span class="chip">NumPy</span><span class="chip">Solidity</span><span class="chip">Web3.py</span><span class="chip">SHA-256</span>
+            <span class="chip">Python</span><span class="chip">TensorFlow / Keras</span><span class="chip">EfficientNetB0</span><span class="chip">OpenCV</span><span class="chip">Flask</span><span class="chip">NumPy</span><span class="chip">Solidity</span><span class="chip">Web3.py</span><span class="chip">Ganache</span><span class="chip">SHA-256</span>
           </div>
         </div>
       </article>
